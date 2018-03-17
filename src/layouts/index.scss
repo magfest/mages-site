@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons');
+@import '~react-md/src/scss/react-md';
+@import 'theme.scss';
+
+@include react-md-everything;
+
+.page{
+  background-color: $md-secondary-color;
+}
+
+.click{
+  cursor: pointer;
+}
+
+footer.md-dialog-footer{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.showCover{
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(lighten(black, 0.9), 0.5);
+
+}
+
+.hideCover{
+  display: none;
+
+}
